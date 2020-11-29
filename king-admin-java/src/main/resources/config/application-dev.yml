@@ -1,11 +1,12 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/king-admin?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password:
+    url: jdbc:mysql://175.24.22.161:3306/king-admin?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: king-admin
+    password: king-admin-qbank
 
 server:
   port: 8080
+  context-path: /KingAdmin
 
 logging:
   config: classpath:logback-spring.xml
