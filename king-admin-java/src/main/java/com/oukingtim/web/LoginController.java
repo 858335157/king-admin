@@ -45,7 +45,7 @@ public class LoginController {
             String username = map.get("username");
             Subject subject = ShiroUtils.getSubject();
             //sha256加密
-            password = new Sha256Hash(password).toHex();
+            //password = new Sha256Hash(password).toHex();
             token = new UsernamePasswordToken(username, password);
             subject.login(token);
         } catch (UnknownAccountException e) {
